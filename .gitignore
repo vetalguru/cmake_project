@@ -1,0 +1,39 @@
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# IDE and Editor files
+.vscode/ # VS Code
+.vs/ # Visual Studio
+.idea/ # JetBrains IDEs (CLion, IntelliJ, etc.)
+*.suo # Visual Studio solution user options
+*.user # Visual Studio user options
+*.pro.user # Qt Creator user options
+*.qbs.user # Qt Creator user options
+
+# CMake and build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+_CPack_Packages/
+build/
+out/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.dll
+*.obj
+*.exe
+*.out
+*.pdb
+*.ilk
+
+# Temp files
+*.tmp
+*.log
+/.vs
