@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
+project(TypicalProject)
 
-project(MyProject)
+include(cmake/compiler_flags.cmake)
 
-add_executable(${PROJECT_NAME} main.cpp)
-
+add_subdirectory(lib)
+add_subdirectory(sample)
