@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "sample_header.hpp"
+#include "include/sample_header.hpp"
 
 int main(int /*argc*/, char* /*argv*/[]) {
     int result = do_something();
