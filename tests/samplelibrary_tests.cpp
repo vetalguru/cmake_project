@@ -1,17 +1,16 @@
 #include <gtest/gtest.h>
-#include "include/sample_header.hpp"
+
 #include <sstream>
 #include <string>
 
+#include "include/sample_header.hpp"
 
 TEST(DoSomethingTest, ReturnsCorrectValue) {
     EXPECT_EQ(do_something(), 42);
 }
 
 TEST(DoSomethingTest, DoesNotThrow) {
-    EXPECT_NO_THROW({
-        do_something();
-    });
+    EXPECT_NO_THROW({ do_something(); });
 }
 
 TEST(DoSomethingTest, PrintsCorrectMessage) {
