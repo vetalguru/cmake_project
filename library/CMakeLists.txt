@@ -1,4 +1,4 @@
-project(calclibrary)
+project(${LIBRARY_NAME})
 
 set(INCLUDES "${CMAKE_CURRENT_SOURCE_DIR}/include/sample_header.hpp")
 set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/sample_source.cpp")
