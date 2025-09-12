@@ -11,6 +11,7 @@ desktop.ini # Windows
 *.user # Visual Studio user options
 *.pro.user # Qt Creator user options
 *.qbs.user # Qt Creator user options
+*.autosave # Qt Creator user options
 
 # CMake and build files
 CMakeCache.txt

@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(TypicalProject)
 
 option(BUILD_TESTS "Build unit tests" ON)
+option(CLANG_FORMAT_FIX "Auto-fix code style with clang-format" OFF)
 
 include(cmake/compiler_flags.cmake)
 
