@@ -1,9 +1,13 @@
 project(calclibrary)
 
+set(INCLUDES "${CMAKE_CURRENT_SOURCE_DIR}/include/sample_header.hpp")
+set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/sample_source.cpp")
+
 add_library(
     ${PROJECT_NAME}
     SHARED
-    src/sample_source.cpp
+    ${INCLUDES}
+    ${SOURCES}
 )
 
 target_include_directories(
