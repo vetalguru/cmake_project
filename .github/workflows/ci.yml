@@ -27,7 +27,13 @@ jobs:
 
     - name: Configure CMake
       run: |
-        cmake -S . -B build -G "Ninja" -DCMAKE_CXX_COMPILER=${{ matrix.compiler }}
+        cmake -S . -B build -G "Ninja" \
+              -DCMAKE_CXX_COMPILER=${{ matrix.compiler }} \
+              -DCMAKE_BUILD_TYPE=Release
 
     - name: Build Project
       run: cmake --build build --config Release
+
+    - name: Run Tests
+      working-directory: build
+      run: ctest --output-on-failure
